@@ -52,10 +52,6 @@ class Basket {
         this.items = [];
     }
 
-    addItem(){}           //мы будем добавлять элементы в корзину
-
-    removeItem(){}        //и удалять их из неё, если не подошли
-
     countTotalPrice(){}   //подсчёт общей стоимости товаров
 
     countTotalNumber() {} //подсчитать общее число предметов в корзине
@@ -71,6 +67,10 @@ class basketItem {
         this.price = price;
         this.quantity = quantity;
     }
+
+    addToBasket(){}           //мы будем добавлять элементы в корзину
+
+    removeFromBasket(){}        //и удалять их из неё, если не подошли
 
     render() {
         return `<div class="goods-item"><h3>${this.title}</h3><p>${this.price}</p><p>${this.quantity}</p></div>`;
