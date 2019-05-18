@@ -30,11 +30,14 @@ class GoodsList {
 
     countTotalPrice() {
         let price = 0;
-        this.goods.forEach(good => {
+        /*this.goods.forEach(good => {
             price += good.price;
+        });*/
+        this.goods.reduce((accum, item) => {
+            console.log(prev.price + current.price);
+            return prev.price + current.price;
         });
-        console.log(price);//чтоб показать, что работает
-        return price;
+        //return price;
     }
 
     render() {
